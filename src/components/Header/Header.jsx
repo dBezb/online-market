@@ -38,7 +38,23 @@ const Header = () => {
               value=""
             />
           </div>
+          {false && <div className={styles.box}></div>}
         </form>
+        <div className={styles.account}>
+          <Link to={ROUTES.HOME} className={styles.favourites}>
+            <svg className={["icon-fav"]}>
+              <use
+                xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#heart`}
+              ></use>
+            </svg>
+          </Link>
+          <Link to={ROUTES.CART} className={styles.cart}>
+            <svg className={["icon-cart"]}>
+              <use xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#bag`}></use>
+            </svg>
+            <span className={styles.count}>3</span>
+          </Link>
+        </div>
       </div>
     </div>
   );
