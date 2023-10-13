@@ -9,7 +9,7 @@ const Sidebar = () => {
       <nav>
         <ul className={styles.menu}>
           <li>
-            <NavLink>Link</NavLink>
+            <NavLink to={`/categories/${1}`}>Link</NavLink>
           </li>
         </ul>
       </nav>
