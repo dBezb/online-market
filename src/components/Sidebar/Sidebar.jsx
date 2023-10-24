@@ -8,14 +8,23 @@ const Sidebar = () => {
 
   console.log(list);
 
+  const firstFiveItems = list.slice(0, 5);
+
   return (
     <section className={styles.sidebar}>
       <div className={styles.title}>Categories</div>
       <nav>
         <ul className={styles.menu}>
-          {list.map(({ id, name }) => (
+          {firstFiveItems.map(({ id, name }) => (
             <li key={id}>
-              <NavLink to={`/categories/${list}`}>{name}</NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  `${styles.link} ${isActive ? styles.active : ""}`
+                }
+                to={`/categories/${id}`}
+              >
+                {name}
+              </NavLink>
             </li>
           ))}
         </ul>
