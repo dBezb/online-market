@@ -4,7 +4,7 @@ import { BASE_URL } from "../../utils/constants";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 export const createUser = createAsyncThunk(
-  "categories/getCategories",
+  "users/createUser",
   async (payload, thunkAPI) => {
     try {
       const res = await axios.post(`${BASE_URL}/users`, payload);
