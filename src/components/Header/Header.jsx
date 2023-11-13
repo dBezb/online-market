@@ -6,6 +6,7 @@ import LOGO from "../../images/logo.svg";
 import AVATAR from "../../images/avatar.jpg";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleForm } from "../../features/user/userSlice";
+import { useGetProductsQuery } from "../../features/api/apiSlice";
 const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -15,6 +16,10 @@ const Header = () => {
   const { currentUser } = useSelector(({ user }) => user);
 
   const [values, setValues] = useState({ name: "Guest", avatar: AVATAR });
+
+  const { data, isLoading } = useGetProductsQuery({ title: searchValue });
+
+  console.log(data);
 
   useEffect(() => {
     if (!currentUser) return;
@@ -63,7 +68,30 @@ const Header = () => {
               value={searchValue}
             />
           </div>
-          {false && <div className={styles.box}></div>}
+          {searchValue && (
+            <div className={styles.box}>
+              {isLoading
+                ? "Loading"
+                : !data.length
+                ? "No result"
+                : data.map(({ title, images, id }) => {
+                    return (
+                      <Link
+                        key={id}
+                        onClick={() => setSearchValue("")}
+                        className={styles.item}
+                        to={`/products/${id}`}
+                      >
+                        <div
+                          className={styles.image}
+                          style={{ backgroundImage: `url(${images[0]})` }}
+                        />
+                        <div className={styles.title}>{title}</div>
+                      </Link>
+                    );
+                  })}
+            </div>
+          )}
         </form>
         <div className={styles.account}>
           <Link to={ROUTES.HOME} className={styles.favourites}>
