@@ -33,6 +33,25 @@ const Category = () => {
             name="title"
             onChange={() => {}}
             placeholder="Product name"
+            value={params.title}
+          />
+        </div>
+        <div className={styles.filter}>
+          <input
+            type="number"
+            name="price_min"
+            onChange={() => {}}
+            placeholder="0"
+            value={params.price_min}
+          />
+        </div>
+        <div className={styles.filter}>
+          <input
+            type="number"
+            name="price_max"
+            onChange={() => {}}
+            placeholder="0"
+            value={params.price_max}
           />
         </div>
       </form>
