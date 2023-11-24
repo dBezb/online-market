@@ -94,7 +94,7 @@ const Header = () => {
           )}
         </form>
         <div className={styles.account}>
-          <Link to={ROUTES.HOME} className={styles.favourites}>
+          <Link to={ROUTES.FAVORITES} className={styles.favourites}>
             <svg className={["icon-fav"]}>
               <use
                 xlinkHref={`${process.env.PUBLIC_URL}/sprite.svg#heart`}
