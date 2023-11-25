@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Online Store App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+_The Online Store App is a modern e-commerce platform designed to provide users with a seamless shopping experience. It incorporates essential features such as product browsing, cart management, favorite items selection, and user authentication. The application aims to showcase best practices in React development and state management using Redux._
 
-In the project directory, you can run:
+## Technologies Used
 
-### `npm start`
+- **React:** _The application is built using React, a powerful and efficient JavaScript library for building user interfaces. React's component-based architecture allows for the creation of reusable and modular UI elements._
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **JavaScript:** _Various functionalities and utility functions are implemented in JavaScript to enhance the application's features._
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Redux Toolkit:** _Redux is employed for state management, ensuring a centralized and predictable state container. The use of Redux Toolkit simplifies the implementation of Redux logic, making the codebase more maintainable._
 
-### `npm test`
+- **React Router:** _Navigation is handled with React Router, enabling users to seamlessly move between different sections of the application without page reloads._
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Axios:** _The axios library facilitates HTTP requests, enabling the app to interact with a backend server for data retrieval and updates._
 
-### `npm run build`
+- **CSS Modules:** _Component styling is organized using CSS modules, ensuring scoped and maintainable styles._
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **_`src/components`:_** _Contains React components that compose the application's pages and UI elements, such as Home, Cart, Favorites, etc._
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **_`src/features`:_** _Manages the application state with Redux. The user, products, and categories slices handle user data, product information, and category details._
 
-### `npm run eject`
+- **_`src/utils`:_** _Hosts utility functions for common tasks, including array shuffling (shuffle), URL construction (buildUrl), and numeric summation (sumBy)._
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **_`src/styles`:_** _Component styling is organized using CSS modules, ensuring scoped and maintainable styles._
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **_`public`:_** _Contains static assets, including images and fonts._
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **_`index.js`:_** _The main entry point of the application, initializing React and rendering the root component._
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Functionality
 
-## Learn More
+### Header
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The Header component is a fundamental element in the Online Store App, offering key features for navigation and user interaction. It is structured as follows:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Logo:** Displays the app logo, serving as a link to the Home page.
 
-### Code Splitting
+- **User Information:** Shows the user's avatar and name. Clicking opens the user's profile (for logged-in users) or the Sign Up/In form (for guests).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Search Bar:** Includes a real-time search input for product discovery. Dynamically updates displayed products based on user input, with suggestions shown below.
 
-### Analyzing the Bundle Size
+- **Navigation Links:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  - **Home:** Main landing page.
+  - **Cart:** Navigates to the Cart page.
+  - **Favorites:** Directs to the Favorites page.
 
-### Making a Progressive Web App
+- **Cart and Favorites Icons:** Quick access to Cart and Favorites, with the cart icon indicating the item count.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Real-time Search Suggestions:** Displays product suggestions matching user input, with clickable links to respective product pages.
 
-### Advanced Configuration
+- **Responsive Design:** Ensures a seamless experience across various screen sizes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The Header component enhances user experience through intuitive navigation and easy access to essential functionalities.
 
-### Deployment
+### Home
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- Displays a promotional poster and various product sections, including trending items and categories.
+- Utilizes Redux to fetch and display products, categorized and filtered appropriately.
 
-### `npm run build` fails to minify
+### Product Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Provides detailed information about a specific product.
+- Users can view product images, description, and pricing.
+- Allows users to adjust the quantity of items and add them to the shopping cart.
+- Utilizes React Router for navigation to the product details page.
+
+### Cart
+
+- Allows users to view and manage items in their shopping cart.
+- Supports adding, removing, and adjusting the quantity of items.
+- Displays the total price of items in the cart.
+
+### Authentication
+
+- Users can sign up, log in, and log out.
+- Utilizes JWT authentication for secure user sessions.
+
+### Profile
+
+- Provides a form for users to update their profile information.
+- Requires user authentication to access.
+
+## How to Run
+
+1. Clone the repository: `https://github.com/dBezb/online-market`
+2. Install dependencies: npm install
+3. Run the application: npm start
