@@ -86,8 +86,41 @@ The Header component enhances user experience through intuitive navigation and e
 - Provides a form for users to update their profile information.
 - Requires user authentication to access.
 
+## Showcase
+
+**Home page:**
+<div>
+
+https://github.com/dBezb/online-market/assets/130229787/3086ba2f-8548-4860-9b68-49ac9ed3745e
+
+</div>
+
+**If you click on the profile picture, you will see registration (If not registered):**
+![signupscreen](https://github.com/dBezb/online-market/assets/130229787/b4025d65-bb3b-46a3-b5a7-da34b28491a0)
+
+**Also if you are registered and click on the icon you will be transferred to the personal profile data editor:**
+![signupeditscreen](https://github.com/dBezb/online-market/assets/130229787/b97ad322-fd27-4f95-90f2-98a6a8ed0e43)
+
+**Product category selection option:**
+![categoriesfirststepscreen](https://github.com/dBezb/online-market/assets/130229787/3889581d-cb21-40c6-b6ea-a1fa0b47bc96)
+![categoriessecondscreen](https://github.com/dBezb/online-market/assets/130229787/62352fde-7fbd-4e05-805f-2f87ab022df0)
+
+**Product page:**
+![productpagescreen](https://github.com/dBezb/online-market/assets/130229787/1adade66-44aa-4800-8d7c-04222447e322)
+![productpagesecondscreen](https://github.com/dBezb/online-market/assets/130229787/c2b0771d-b7fd-4a9e-bbf4-73bc02fc838a)
+
+**We can also add a product to your cart or favourites:**
+- Favourites:
+![favourites](https://github.com/dBezb/online-market/assets/130229787/67d5ea7b-e498-4a16-b29f-558e31669cb2)
+- Cart: ![cartscreen](https://github.com/dBezb/online-market/assets/130229787/41748d8b-0bdd-48ba-8855-bbc103a91f05)
+
+**Search Bar:**
+![search](https://github.com/dBezb/online-market/assets/130229787/293585ae-922f-4bbf-9a87-a5631c90d931)
+
 ## How to Run
 
 1. Clone the repository: `https://github.com/dBezb/online-market`
 2. Install dependencies: npm install
 3. Run the application: npm start
+
+
