@@ -1,5 +1,11 @@
 # Online Store App
 
+## How to Run
+
+1. Clone the repository: `https://github.com/dBezb/online-market`
+2. Install dependencies: npm install
+3. Run the application: npm start
+
 ## Project Overview
 
 _The Online Store App is a modern e-commerce platform designed to provide users with a seamless shopping experience. It incorporates essential features such as product browsing, cart management, favorite items selection, and user authentication. The application aims to showcase best practices in React development and state management using Redux._
@@ -116,11 +122,4 @@ https://github.com/dBezb/online-market/assets/130229787/3086ba2f-8548-4860-9b68-
 
 **Search Bar:**
 ![search](https://github.com/dBezb/online-market/assets/130229787/293585ae-922f-4bbf-9a87-a5631c90d931)
-
-## How to Run
-
-1. Clone the repository: `https://github.com/dBezb/online-market`
-2. Install dependencies: npm install
-3. Run the application: npm start
-
 
