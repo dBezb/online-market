@@ -53,16 +53,10 @@ The Header component is a fundamental element in the Online Store App, offering 
 - **Navigation Links:**
 
   - **Home:** Main landing page.
-  - **Cart:** Navigates to the Cart page.
+  - **Cart:** Navigate to the Cart page.
   - **Favorites:** Directs to the Favorites page.
 
 - **Cart and Favorites Icons:** Quick access to Cart and Favorites, with the cart icon indicating the item count.
-
-- **Real-time Search Suggestions:** Displays product suggestions matching user input, with clickable links to respective product pages.
-
-- **Responsive Design:** Ensures a seamless experience across various screen sizes.
-
-The Header component enhances user experience through intuitive navigation and easy access to essential functionalities.
 
 ### Home
 
