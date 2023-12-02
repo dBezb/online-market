@@ -10,6 +10,8 @@
 
 _The Online Store App is a modern e-commerce platform designed to provide users with a seamless shopping experience. It incorporates essential features such as product browsing, cart management, favorite items selection, and user authentication. The application aims to showcase best practices in React development and state management using Redux._
 
+:warning: Please be aware that the fake API used in this project (https://fakeapi.platzi.com) may sometimes produce inaccurate data.
+
 ## Technologies Used
 
 - **React:** _The application is built using React, a powerful and efficient JavaScript library for building user interfaces. React's component-based architecture allows for the creation of reusable and modular UI elements._
